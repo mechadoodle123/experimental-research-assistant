@@ -1,0 +1,16 @@
+Loading data from: /home/arya/Desktop/experimental_research_assistant/raw/silver_nanoparticle_experiments.csv
+Rule 9: Dropping 4 exact duplicate rows.
+
+==================================================
+CLEANING COMPLETE
+==================================================
+Input records:       207
+Clean records saved: 200 -> /home/arya/Desktop/experimental_research_assistant/processed/clean_silver_nanoparticles.csv
+Rejected records:    3 -> /home/arya/Desktop/experimental_research_assistant/processed/rejects.csv
+Cleaning flags logged on 182 rows.
+
+above were the results obtained while cleaning the file 
+
+notice that 3 record(rows) were rejected and 4 rows were exact duplicates 
+
+this tells us that out of the 207 rows only 200 were selected or labelled as clean 

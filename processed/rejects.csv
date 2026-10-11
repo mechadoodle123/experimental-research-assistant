@@ -1,0 +1,4 @@
+experiment_id,date,researcher,reducing_agent,stabilizer,solvent,temperature,ph,reaction_time_min,agno3_conc,particle_size_nm,pdi,zeta_potential_mv,uvvis_peak_nm,yield_percent,source_row,cleaning_flags,rejection_reason
+EXP-0059,2026-04-04,P. Nair,ascorbic acid,none,water-ethanol 1:1,100.0,5.6,15.0,2.0,80.8,0.45,-7.5,432.3,71.7,64,date_converted_to_iso; temp_unit_K_to_C,"conflict, needs review"
+EXP-0067,2026-04-17,K. Iyer,trisodium citrate,citrate,water,40.0,6.2,30.0,0.1,33.4,0.18,-27.7,418.9,68.8,81,solvent_standardized,"conflict, needs review"
+EXP-0105,2026-06-08,A. Rao,glucose,PVP,water-ethanol 1:1,80.0,7.7,120.0,1.0,29.3,0.22,-31.8,409.7,97.2,76,agno3_conc_uM_to_mM; solvent_standardized,"conflict, needs review"

@@ -1,0 +1,201 @@
+experiment_id,date,researcher,reducing_agent,stabilizer,solvent,temperature,ph,reaction_time_min,agno3_conc,particle_size_nm,pdi,zeta_potential_mv,uvvis_peak_nm,yield_percent,source_row,cleaning_flags
+EXP-0117,2026-06-25,S. Menon,ascorbic acid,none,water,65.0,7.8,45.0,0.25,39.7,0.41,-4.5,421.2,75.2,2,date_converted_to_iso; agno3_conc_uM_to_mM; particle_size_nm_stripped
+EXP-0064,2026-04-12,S. Menon,ascorbic acid,PEG,ethanol,95.0,5.3,120.0,2.0,43.9,0.31,-4.0,419.7,92.1,3,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0027,2026-02-18,A. Rao,glucose,none,water-ethanol 1:1,90.0,10.4,180.0,0.25,71.5,0.36,-19.8,433.6,99.0,4,
+EXP-0074,2026-04-26,K. Iyer,glucose,none,ethanol,75.0,8.2,30.0,0.25,45.4,0.28,-12.0,418.9,84.0,5,temp_unit_stripped
+EXP-0053,2026-03-29,P. Nair,glucose,PVP,ethanol,95.0,7.7,60.0,2.0,40.6,0.23,-22.6,419.2,76.6,6,date_converted_to_iso; solvent_standardized
+EXP-0183,2026-09-25,A. Rao,ascorbic acid,none,water-ethanol 1:1,40.0,11.0,180.0,0.5,40.3,0.36,-17.0,414.3,99.0,7,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0103,2026-06-06,P. Nair,sodium borohydride,PVP,ethanol,60.0,7.4,60.0,0.1,18.6,0.17,-25.4,400.9,84.4,8,solvent_standardized
+EXP-0168,2026-09-06,A. Rao,glucose,PEG,ethanol,100.0,8.4,45.0,1.0,45.4,0.35,-11.2,417.5,81.8,9,solvent_standardized
+EXP-0007,2026-01-22,A. Rao,ascorbic acid,PEG,water-ethanol 1:1,,7.2,30.0,2.0,40.5,0.34,-15.3,414.3,,10,temperature_out_of_bounds(450C); particle_size_nm_stripped
+EXP-0090,2026-05-17,S. Menon,ascorbic acid,citrate,ethanol,25.0,7.7,30.0,0.1,36.7,0.3,,421.4,60.7,11,solvent_standardized
+EXP-0134,2026-07-18,S. Menon,ascorbic acid,citrate,ethanol,100.0,8.3,15.0,2.0,45.1,0.36,,422.2,72.6,12,solvent_standardized
+EXP-0148,2026-08-07,P. Nair,sodium borohydride,PEG,water-ethanol 1:1,25.0,9.4,10.0,0.1,15.8,0.18,-7.4,405.4,63.4,13,date_converted_to_iso; agno3_conc_uM_to_mM
+EXP-0094,2026-05-25,P. Nair,ascorbic acid,PEG,water-ethanol 1:1,100.0,9.3,60.0,1.0,33.7,0.21,-18.4,414.3,70.9,14,date_converted_to_iso; solvent_standardized
+EXP-0049,2026-03-22,P. Nair,glucose,CTAB,ethanol,60.0,10.4,180.0,0.5,38.1,0.23,31.6,413.6,92.1,15,
+EXP-0066,2026-04-14,K. Iyer,ascorbic acid,PVP,ethanol,25.0,7.6,120.0,2.0,,0.29,-28.1,417.4,77.4,16,date_converted_to_iso; solvent_standardized
+EXP-0164,2026-08-29,A. Rao,glucose,PVP,ethanol,95.0,6.0,15.0,0.1,35.3,0.3,-26.1,413.2,76.0,17,temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0108,2026-06-13,S. Menon,glucose,PEG,water,40.0,5.4,10.0,1.0,31.0,0.2,-4.2,408.1,67.8,18,solvent_standardized
+EXP-0107,2026-06-10,A. Rao,trisodium citrate,PEG,ethanol,95.0,9.4,45.0,0.1,38.1,0.19,,406.8,76.9,19,date_converted_to_iso; temp_unit_K_to_C
+EXP-0021,2026-02-12,K. Iyer,glucose,PVP,water-ethanol 1:1,55.0,6.9,15.0,0.5,22.6,0.17,-21.1,408.0,65.0,20,solvent_standardized
+EXP-0179,2026-09-20,A. Rao,sodium borohydride,none,water,55.0,9.6,30.0,0.5,36.5,0.28,-2.0,412.7,60.4,21,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0175,2026-09-14,K. Iyer,trisodium citrate,citrate,ethanol,75.0,5.1,10.0,1.0,50.7,0.32,-28.4,,71.6,22,solvent_standardized
+EXP-0182,2026-09-25,P. Nair,ascorbic acid,PEG,water,25.0,8.8,45.0,0.25,17.5,0.15,-8.6,404.9,72.4,23,date_converted_to_iso; temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0193,2026-10-10,P. Nair,ascorbic acid,PEG,water-ethanol 1:1,100.0,9.3,90.0,1.0,39.1,0.28,-7.5,418.9,98.7,24,agno3_conc_uM_to_mM
+EXP-0116,2026-06-23,K. Iyer,glucose,PVP,water,95.0,8.2,60.0,0.1,31.2,0.24,-38.7,407.4,90.8,25,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0095,2026-05-26,P. Nair,trisodium citrate,PVP,water-ethanol 1:1,80.0,8.1,120.0,0.25,33.9,0.19,-31.4,411.2,95.0,26,date_converted_to_iso; solvent_standardized
+EXP-0059,2026-04-04,P. Nair,ascorbic acid,none,water-ethanol 1:1,100.0,5.6,15.0,2.0,78.1,0.45,-7.5,432.3,71.7,27,date_converted_to_iso; temp_unit_K_to_C
+EXP-0097,2026-05-29,P. Nair,glucose,citrate,water,55.0,6.8,60.0,0.5,32.8,0.19,-27.6,408.4,63.8,29,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0045,2026-03-16,P. Nair,glucose,PEG,ethanol,60.0,8.3,120.0,1.0,43.0,0.33,-12.4,414.9,79.8,30,date_converted_to_iso; solvent_standardized
+EXP-0151,2026-08-13,P. Nair,trisodium citrate,PEG,ethanol,25.0,5.0,120.0,0.5,35.2,0.27,-6.2,416.1,99.0,31,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0178,2026-09-20,S. Menon,glucose,none,ethanol,20.0,9.2,45.0,0.5,39.2,0.24,-20.6,415.3,64.8,32,date_converted_to_iso; temp_unit_K_to_C; solvent_standardized
+EXP-0061,2026-04-08,A. Rao,ascorbic acid,CTAB,water,90.0,6.3,180.0,0.25,37.2,0.25,29.1,412.5,99.0,33,solvent_standardized
+EXP-0127,2026-07-10,S. Menon,trisodium citrate,CTAB,water,95.0,8.4,120.0,0.5,45.8,0.34,30.3,417.9,88.4,34,temp_unit_stripped; solvent_standardized
+EXP-0082,2026-05-08,P. Nair,glucose,PVP,water-ethanol 1:1,55.0,11.0,60.0,0.1,28.0,0.26,-33.9,414.4,85.0,35,date_converted_to_iso; temp_unit_stripped
+EXP-0039,2026-03-09,P. Nair,sodium borohydride,PEG,water,40.0,10.0,15.0,0.1,20.0,0.2,-18.5,409.2,65.0,36,date_converted_to_iso
+EXP-0167,2026-09-02,S. Menon,glucose,citrate,ethanol,80.0,6.1,10.0,0.5,38.6,0.31,-33.5,416.2,78.2,37,date_converted_to_iso; temp_unit_K_to_C
+EXP-0016,2026-02-04,K. Iyer,ascorbic acid,PEG,water,60.0,9.1,60.0,2.0,31.1,0.25,-10.8,405.5,75.6,38,temp_unit_stripped; solvent_standardized
+EXP-0166,2026-09-02,K. Iyer,sodium borohydride,CTAB,water,80.0,6.8,180.0,0.25,23.5,0.23,21.1,410.3,90.8,39,temp_unit_K_to_C
+EXP-0120,2026-06-30,P. Nair,sodium borohydride,none,water,25.0,8.6,120.0,0.5,30.0,0.25,-6.2,413.9,81.3,40,
+EXP-0067,2026-04-17,K. Iyer,trisodium citrate,citrate,water,40.0,6.2,30.0,0.1,36.1,0.18,-27.7,418.9,68.8,41,solvent_standardized
+EXP-0128,2026-07-10,P. Nair,sodium borohydride,none,water,65.0,10.5,15.0,0.1,37.0,0.2,-14.7,417.0,75.2,42,temp_unit_K_to_C; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0006,2026-01-20,S. Menon,glucose,PEG,ethanol,95.0,9.1,15.0,2.0,45.5,0.22,-14.2,418.5,80.9,43,
+EXP-0044,2026-03-16,P. Nair,glucose,PEG,water,80.0,10.5,30.0,0.1,27.6,0.32,-22.0,409.5,83.5,44,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0033,2026-02-28,K. Iyer,ascorbic acid,CTAB,water-ethanol 1:1,55.0,5.1,45.0,0.1,30.3,0.21,28.7,414.7,64.7,45,temp_unit_stripped; solvent_standardized
+EXP-0172,2026-09-11,S. Menon,trisodium citrate,citrate,ethanol,80.0,,120.0,2.0,51.9,0.3,-25.8,420.2,99.0,46,particle_size_nm_stripped
+EXP-0114,2026-06-21,P. Nair,trisodium citrate,none,water-ethanol 1:1,45.0,8.3,90.0,0.5,47.9,0.25,-13.4,419.8,70.5,47,date_converted_to_iso
+EXP-0133,2026-07-17,S. Menon,sodium borohydride,CTAB,water,80.0,6.2,120.0,2.0,33.9,0.23,25.2,413.1,,48,particle_size_nm_stripped; solvent_standardized
+EXP-0088,2026-05-17,A. Rao,trisodium citrate,PEG,water-ethanol 1:1,40.0,9.0,90.0,2.0,31.9,0.27,-1.4,418.1,86.3,49,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0038,2026-03-07,S. Menon,trisodium citrate,citrate,water-ethanol 1:1,25.0,5.0,180.0,2.0,40.2,0.28,-29.0,415.3,97.2,50,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0015,2026-02-02,S. Menon,ascorbic acid,PVP,water,60.0,5.9,60.0,2.0,41.4,0.21,-29.3,416.1,64.7,51,temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0072,2026-04-24,S. Menon,ascorbic acid,citrate,water,65.0,6.2,30.0,0.25,,0.26,-21.1,413.4,79.5,52,temp_unit_stripped; solvent_standardized
+EXP-0024,2026-02-16,P. Nair,trisodium citrate,citrate,water-ethanol 1:1,100.0,5.3,45.0,0.1,37.4,0.29,,409.6,67.6,53,date_converted_to_iso; solvent_standardized
+EXP-0154,2026-08-15,A. Rao,sodium borohydride,citrate,ethanol,40.0,9.3,90.0,1.0,38.1,0.27,-29.0,410.6,97.5,54,solvent_standardized
+EXP-0152,2026-08-13,K. Iyer,glucose,PVP,water-ethanol 1:1,20.0,5.8,120.0,0.1,27.3,0.22,-29.4,409.4,77.9,55,date_converted_to_iso; temp_unit_K_to_C; solvent_standardized
+EXP-0161,2026-08-27,S. Menon,ascorbic acid,none,water-ethanol 1:1,25.0,,30.0,0.25,36.8,,-16.4,411.4,61.5,56,solvent_standardized
+EXP-0118,2026-06-28,A. Rao,glucose,none,water-ethanol 1:1,,10.9,15.0,2.0,51.2,0.31,-5.8,422.9,63.3,57,temperature_out_of_bounds(999.0C); agno3_conc_uM_to_mM
+EXP-0115,2026-06-24,A. Rao,sodium borohydride,PEG,water,25.0,9.6,120.0,0.25,18.8,0.19,-12.7,404.6,,58,
+EXP-0091,2026-05-21,K. Iyer,glucose,none,ethanol,80.0,5.5,120.0,2.0,85.7,0.5,-10.8,437.2,83.2,59,solvent_standardized
+EXP-0184,2026-09-27,K. Iyer,ascorbic acid,PEG,water-ethanol 1:1,,11.0,15.0,0.1,20.2,0.21,-14.4,408.5,62.8,60,temp_unit_stripped; temperature_out_of_bounds(-5.0C); solvent_standardized
+EXP-0121,2026-07-01,P. Nair,ascorbic acid,citrate,water-ethanol 1:1,25.0,6.6,120.0,0.25,27.0,0.23,-27.7,407.5,79.6,61,date_converted_to_iso; temp_unit_stripped
+EXP-0105,2026-06-08,A. Rao,glucose,PVP,water-ethanol 1:1,80.0,7.7,120.0,1.0,34.7,0.22,-31.8,409.7,97.2,62,agno3_conc_uM_to_mM; solvent_standardized
+EXP-0068,2026-04-18,P. Nair,glucose,PVP,ethanol,80.0,9.8,10.0,0.5,,0.24,-29.6,409.4,73.4,63,date_converted_to_iso; solvent_standardized
+EXP-0186,2026-09-29,S. Menon,glucose,citrate,water-ethanol 1:1,80.0,6.4,10.0,0.1,35.6,0.21,-29.4,418.8,69.8,65,temp_unit_stripped; solvent_standardized
+EXP-0052,2026-03-27,K. Iyer,ascorbic acid,citrate,ethanol,80.0,9.5,90.0,0.1,34.0,0.26,-27.9,412.1,82.9,66,
+EXP-0004,2026-01-19,P. Nair,glucose,none,ethanol,95.0,9.1,10.0,0.25,92.3,0.44,-1.9,440.6,81.2,67,temp_unit_K_to_C; solvent_standardized
+EXP-0130,2026-07-13,A. Rao,sodium borohydride,PEG,water,75.0,7.6,10.0,0.25,26.9,0.31,,411.5,69.8,68,solvent_standardized
+EXP-0162,2026-08-26,A. Rao,ascorbic acid,CTAB,water,40.0,,120.0,2.0,43.5,0.31,41.5,421.6,77.1,69,temp_unit_stripped; solvent_standardized
+EXP-0070,2026-04-22,A. Rao,ascorbic acid,CTAB,ethanol,80.0,9.1,10.0,0.5,42.0,0.3,28.2,418.1,68.4,70,solvent_standardized
+EXP-0010,2026-01-28,S. Menon,glucose,none,water,25.0,,90.0,1.0,39.0,0.33,-5.1,410.5,79.1,71,date_converted_to_iso; solvent_standardized; ph_out_of_bounds(-1.0)
+EXP-0034,2026-02-28,P. Nair,ascorbic acid,none,water-ethanol 1:1,95.0,7.6,90.0,0.5,,0.48,-9.6,433.9,92.9,72,solvent_standardized
+EXP-0187,2026-09-30,P. Nair,ascorbic acid,CTAB,ethanol,25.0,9.9,10.0,0.5,28.7,0.21,31.1,414.4,69.3,73,solvent_standardized
+EXP-0069,2026-04-18,S. Menon,sodium borohydride,none,water-ethanol 1:1,40.0,8.6,30.0,0.1,27.3,0.3,-24.1,412.0,75.9,74,date_converted_to_iso; solvent_standardized
+EXP-0087,2026-05-14,A. Rao,glucose,PEG,water,20.0,5.9,30.0,0.25,20.3,0.13,-2.2,411.4,73.6,75,date_converted_to_iso; solvent_standardized
+EXP-0157,2026-08-20,K. Iyer,glucose,none,water-ethanol 1:1,80.0,5.5,120.0,0.25,76.2,0.43,4.0,434.4,91.5,77,temp_unit_K_to_C; solvent_standardized
+EXP-0181,2026-09-23,K. Iyer,ascorbic acid,PVP,water,80.0,6.3,30.0,2.0,37.0,0.27,-30.1,411.2,70.0,78,agno3_conc_uM_to_mM
+EXP-0135,2026-07-22,K. Iyer,sodium borohydride,none,ethanol,60.0,7.6,15.0,0.25,43.1,0.26,-21.2,422.1,64.8,79,date_converted_to_iso; temp_unit_stripped; particle_size_nm_stripped; solvent_standardized
+EXP-0071,2026-04-23,A. Rao,ascorbic acid,CTAB,water-ethanol 1:1,80.0,8.6,15.0,0.5,29.7,0.23,32.3,409.8,69.5,80,temp_unit_stripped; solvent_standardized
+EXP-0145,2026-08-05,P. Nair,glucose,PVP,water-ethanol 1:1,90.0,8.7,60.0,0.1,28.9,0.26,-19.3,414.3,78.0,82,solvent_standardized
+EXP-0124,2026-07-05,S. Menon,glucose,CTAB,ethanol,65.0,9.9,30.0,0.5,37.5,0.38,31.3,411.7,78.4,83,temp_unit_stripped; solvent_standardized
+EXP-0110,2026-06-17,P. Nair,ascorbic acid,none,water-ethanol 1:1,65.0,7.4,60.0,1.0,,0.37,-11.8,420.7,83.1,84,date_converted_to_iso; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0060,2026-04-06,A. Rao,sodium borohydride,PVP,water,80.0,9.5,90.0,0.25,25.0,0.2,-32.1,405.5,85.2,85,solvent_standardized
+EXP-0062,2026-04-10,P. Nair,ascorbic acid,PVP,water,60.0,10.5,90.0,0.1,27.5,0.26,-29.0,,81.3,86,temp_unit_stripped; solvent_standardized
+EXP-0109,2026-06-15,P. Nair,ascorbic acid,citrate,water-ethanol 1:1,95.0,8.5,90.0,0.25,34.9,0.24,-31.0,415.3,89.5,87,
+EXP-0131,2026-07-16,A. Rao,glucose,PEG,water-ethanol 1:1,55.0,7.3,120.0,2.0,38.8,0.25,-11.2,417.3,,88,
+EXP-0019,2026-02-07,K. Iyer,ascorbic acid,citrate,water,25.0,7.4,60.0,0.1,29.7,,-31.9,410.9,78.2,89,date_converted_to_iso; pdi_out_of_bounds(3.4)
+EXP-0036,2026-03-03,S. Menon,glucose,CTAB,water,25.0,10.6,180.0,0.1,38.2,0.23,36.3,416.5,96.2,90,date_converted_to_iso
+EXP-0056,2026-03-31,S. Menon,trisodium citrate,PEG,water,25.0,6.5,30.0,2.0,31.8,0.34,-18.3,413.9,62.7,91,date_converted_to_iso; temp_unit_stripped; particle_size_nm_stripped; solvent_standardized
+EXP-0083,2026-05-09,S. Menon,trisodium citrate,PVP,water,60.0,7.3,10.0,2.0,41.5,0.25,-24.1,419.4,71.7,92,date_converted_to_iso; solvent_standardized
+EXP-0188,2026-10-02,S. Menon,sodium borohydride,CTAB,ethanol,40.0,7.4,180.0,0.5,23.5,0.15,24.8,410.9,96.3,93,date_converted_to_iso; agno3_conc_uM_to_mM
+EXP-0029,2026-02-21,S. Menon,sodium borohydride,PVP,water,40.0,10.0,30.0,0.25,23.2,0.18,-29.4,411.6,65.2,94,solvent_standardized
+EXP-0158,2026-08-21,A. Rao,ascorbic acid,citrate,water,55.0,6.3,60.0,0.1,29.9,,-32.1,,83.0,95,temp_unit_stripped; solvent_standardized
+EXP-0099,2026-05-31,A. Rao,trisodium citrate,citrate,water,30.0,7.0,180.0,0.1,31.0,0.38,-31.1,410.5,98.2,96,temp_unit_stripped
+EXP-0001,2026-01-13,K. Iyer,sodium borohydride,PVP,water-ethanol 1:1,60.0,6.3,15.0,2.0,33.8,0.29,-27.3,414.8,68.3,97,
+EXP-0192,2026-10-09,S. Menon,sodium borohydride,none,ethanol,20.0,8.3,15.0,2.0,47.5,0.29,-7.0,423.5,56.8,98,particle_size_nm_stripped; solvent_standardized
+EXP-0146,2026-08-04,K. Iyer,trisodium citrate,PVP,water,30.0,5.7,10.0,0.5,27.0,0.16,-27.6,407.9,63.7,99,temp_unit_stripped; solvent_standardized
+EXP-0112,2026-06-17,K. Iyer,trisodium citrate,,ethanol,25.0,10.6,15.0,1.0,45.7,0.26,28.6,422.5,56.9,100,solvent_standardized
+EXP-0136,2026-07-23,S. Menon,trisodium citrate,CTAB,water-ethanol 1:1,60.0,8.4,15.0,0.25,33.5,0.23,43.6,418.2,60.5,101,date_converted_to_iso; solvent_standardized
+EXP-0177,2026-09-18,K. Iyer,ascorbic acid,CTAB,water-ethanol 1:1,60.0,6.6,60.0,0.25,35.5,0.34,24.7,418.1,80.4,102,date_converted_to_iso; temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0190,2026-10-07,P. Nair,trisodium citrate,,water-ethanol 1:1,90.0,5.6,45.0,1.0,40.7,0.34,22.8,413.8,88.7,103,agno3_conc_uM_to_mM; solvent_standardized
+EXP-0020,2026-02-11,S. Menon,sodium borohydride,PEG,ethanol,60.0,7.6,15.0,1.0,28.6,0.22,-6.9,412.4,71.5,104,solvent_standardized
+EXP-0126,2026-07-09,A. Rao,trisodium citrate,CTAB,water,60.0,9.3,120.0,0.1,26.0,,24.6,405.9,84.9,105,temp_unit_stripped
+EXP-0155,2026-08-17,S. Menon,sodium borohydride,citrate,water,25.0,10.0,45.0,0.25,24.5,0.17,-38.8,411.9,75.0,106,date_converted_to_iso; temp_unit_stripped
+EXP-0040,2026-03-11,P. Nair,sodium borohydride,none,water-ethanol 1:1,,6.5,15.0,0.25,38.9,0.25,-22.9,421.0,62.0,107,temperature_out_of_bounds(-40.0C); solvent_standardized
+EXP-0085,2026-05-12,A. Rao,sodium borohydride,PEG,water-ethanol 1:1,60.0,,30.0,0.5,20.7,0.21,,407.2,72.7,108,ph_out_of_bounds(17.2)
+EXP-0149,2026-08-08,A. Rao,ascorbic acid,citrate,ethanol,60.0,10.0,90.0,0.1,26.1,0.26,-19.8,409.7,98.0,109,solvent_standardized
+EXP-0123,2026-07-04,P. Nair,trisodium citrate,CTAB,ethanol,65.0,5.9,30.0,1.0,44.1,0.31,25.4,420.3,82.4,110,temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0058,2026-04-03,K. Iyer,sodium borohydride,PEG,ethanol,80.0,5.4,180.0,1.0,30.5,0.25,-13.3,410.4,97.1,111,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0125,2026-07-06,P. Nair,glucose,CTAB,ethanol,60.0,10.6,45.0,2.0,49.1,0.32,28.8,420.1,,112,temp_unit_stripped; solvent_standardized
+EXP-0143,2026-08-02,K. Iyer,ascorbic acid,citrate,water-ethanol 1:1,90.0,6.1,120.0,0.5,,0.26,-31.6,408.2,91.2,113,
+EXP-0025,2026-02-17,P. Nair,glucose,citrate,water-ethanol 1:1,85.0,6.6,45.0,0.5,38.6,0.25,-30.9,411.7,84.5,114,date_converted_to_iso; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0009,2026-01-24,P. Nair,glucose,PVP,water,40.0,7.0,45.0,2.0,34.5,0.23,-30.6,414.7,81.0,115,temp_unit_stripped; solvent_standardized
+EXP-0080,2026-05-04,P. Nair,glucose,PEG,ethanol,60.0,9.5,45.0,0.5,23.7,0.28,-9.0,405.4,71.1,116,solvent_standardized
+EXP-0160,2026-08-26,K. Iyer,glucose,PVP,ethanol,95.0,9.8,90.0,0.25,35.1,0.21,-28.5,,91.3,117,temp_unit_stripped; agno3_conc_uM_to_mM
+EXP-0013,2026-01-30,A. Rao,sodium borohydride,CTAB,water,20.0,7.9,30.0,0.1,23.5,0.24,36.2,408.3,62.4,118,particle_size_nm_stripped; solvent_standardized
+EXP-0065,2026-04-14,P. Nair,trisodium citrate,PEG,water-ethanol 1:1,60.0,7.4,10.0,1.0,43.0,0.33,-17.0,418.1,60.4,119,date_converted_to_iso; solvent_standardized
+EXP-0084,2026-05-09,K. Iyer,glucose,PEG,water,60.0,9.2,45.0,2.0,37.6,0.38,-14.6,413.4,75.3,120,solvent_standardized
+EXP-0086,2026-05-14,S. Menon,ascorbic acid,none,water-ethanol 1:1,75.0,7.5,120.0,2.0,51.1,0.38,-15.4,428.2,86.5,121,temp_unit_stripped
+EXP-0195,2026-10-13,P. Nair,trisodium citrate,none,water,95.0,8.3,120.0,2.0,92.5,0.52,-6.1,440.0,95.2,122,solvent_standardized
+EXP-0046,2026-03-19,P. Nair,glucose,PVP,water,90.0,7.0,,1.0,40.5,0.35,-25.2,421.6,76.0,123,temp_unit_stripped; reaction_time_min_out_of_bounds(0)
+EXP-0043,2026-03-15,P. Nair,sodium borohydride,PEG,water,40.0,8.3,120.0,0.1,19.5,0.29,-4.1,412.5,82.5,124,date_converted_to_iso; solvent_standardized
+EXP-0174,2026-09-14,S. Menon,trisodium citrate,CTAB,ethanol,100.0,6.1,180.0,2.0,56.2,0.33,32.0,420.7,99.0,125,date_converted_to_iso; temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0063,2026-04-12,P. Nair,ascorbic acid,citrate,ethanol,60.0,9.7,15.0,0.1,38.4,0.29,-27.4,,63.8,126,temp_unit_stripped
+EXP-0144,2026-08-01,P. Nair,glucose,PEG,ethanol,55.0,9.1,180.0,0.1,32.5,0.25,-12.1,413.7,99.0,127,solvent_standardized
+EXP-0093,2026-05-24,K. Iyer,ascorbic acid,CTAB,water-ethanol 1:1,60.0,6.2,120.0,2.0,41.3,0.26,21.2,416.8,85.2,128,date_converted_to_iso; solvent_standardized
+EXP-0051,2026-03-24,K. Iyer,ascorbic acid,citrate,water-ethanol 1:1,35.0,6.5,30.0,0.1,32.4,0.23,-23.0,410.1,58.9,129,temp_unit_K_to_C; solvent_standardized
+EXP-0026,2026-02-19,K. Iyer,trisodium citrate,citrate,water,85.0,7.0,180.0,1.0,44.5,0.33,-34.6,423.3,99.0,130,date_converted_to_iso; solvent_standardized
+EXP-0139,2026-07-25,S. Menon,glucose,PVP,water,45.0,7.7,120.0,0.25,34.8,0.29,-30.9,413.5,94.2,131,temp_unit_stripped
+EXP-0018,2026-02-08,P. Nair,trisodium citrate,citrate,water,45.0,5.1,90.0,1.0,40.7,0.19,,418.2,75.8,132,date_converted_to_iso; solvent_standardized
+EXP-0197,2026-10-16,K. Iyer,trisodium citrate,PEG,water-ethanol 1:1,60.0,10.5,30.0,0.25,24.1,0.21,-9.8,408.7,68.3,133,solvent_standardized
+EXP-0189,2026-10-04,K. Iyer,glucose,PEG,ethanol,100.0,6.1,120.0,0.5,31.8,0.31,-17.5,408.5,99.0,134,date_converted_to_iso; agno3_conc_uM_to_mM
+EXP-0119,2026-06-28,K. Iyer,ascorbic acid,PVP,water,95.0,9.5,120.0,0.1,27.3,0.14,-32.0,414.0,92.3,135,temp_unit_stripped
+EXP-0014,2026-02-02,K. Iyer,ascorbic acid,CTAB,water,60.0,6.6,30.0,0.5,30.1,,30.6,404.9,,136,agno3_conc_uM_to_mM; solvent_standardized; yield_percent_out_of_bounds(134.0)
+EXP-0047,2026-03-18,K. Iyer,ascorbic acid,PEG,ethanol,65.0,10.2,10.0,2.0,43.9,0.45,-20.2,419.5,69.7,137,agno3_conc_uM_to_mM
+EXP-0030,2026-02-23,A. Rao,sodium borohydride,PEG,water,55.0,9.1,120.0,1.0,18.1,0.18,-19.9,408.0,81.4,138,date_converted_to_iso; solvent_standardized
+EXP-0050,2026-03-25,K. Iyer,trisodium citrate,none,water-ethanol 1:1,55.0,6.8,60.0,0.1,41.9,0.28,-13.0,421.2,84.5,139,
+EXP-0171,2026-09-09,P. Nair,trisodium citrate,CTAB,ethanol,35.0,8.7,120.0,0.1,30.0,0.23,28.5,415.3,78.9,141,date_converted_to_iso
+EXP-0048,2026-03-20,S. Menon,sodium borohydride,CTAB,water,60.0,7.2,30.0,0.25,23.2,0.2,30.8,404.6,68.9,142,solvent_standardized
+EXP-0042,2026-03-11,P. Nair,glucose,PEG,water,100.0,7.5,45.0,2.0,,0.35,-18.0,413.5,75.9,143,date_converted_to_iso; temp_unit_stripped
+EXP-0196,2026-10-15,S. Menon,trisodium citrate,CTAB,ethanol,60.0,7.7,30.0,0.25,38.2,0.31,30.0,411.2,67.3,144,temp_unit_K_to_C; solvent_standardized
+EXP-0132,2026-07-15,P. Nair,ascorbic acid,citrate,water-ethanol 1:1,85.0,8.6,120.0,1.0,31.8,0.31,-30.5,414.0,,145,solvent_standardized
+EXP-0106,2026-06-10,K. Iyer,sodium borohydride,PVP,ethanol,25.0,7.5,30.0,1.0,25.4,0.3,-38.6,405.0,69.7,146,date_converted_to_iso
+EXP-0055,2026-03-31,P. Nair,sodium borohydride,none,water-ethanol 1:1,80.0,5.2,90.0,0.25,67.0,0.45,,430.7,71.3,147,date_converted_to_iso; temp_unit_stripped
+EXP-0089,2026-05-17,K. Iyer,ascorbic acid,CTAB,ethanol,45.0,6.8,15.0,0.1,35.2,0.22,31.0,416.4,74.1,148,
+EXP-0054,2026-03-30,S. Menon,glucose,PVP,water,25.0,,180.0,0.1,23.9,0.28,-24.4,413.9,97.4,149,solvent_standardized
+EXP-0079,2026-05-02,K. Iyer,ascorbic acid,citrate,water,55.0,7.0,30.0,1.0,39.1,0.29,-25.5,415.2,68.4,150,date_converted_to_iso; temp_unit_stripped; particle_size_nm_stripped; solvent_standardized
+EXP-0022,2026-02-13,K. Iyer,sodium borohydride,CTAB,ethanol,45.0,9.7,90.0,1.0,32.5,0.28,21.1,408.4,79.5,151,date_converted_to_iso; temp_unit_stripped
+EXP-0141,2026-07-30,P. Nair,trisodium citrate,none,water,45.0,5.5,15.0,0.1,40.5,0.34,-5.5,421.9,66.8,152,date_converted_to_iso; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0138,2026-07-26,A. Rao,ascorbic acid,PVP,water-ethanol 1:1,80.0,10.8,45.0,1.0,23.9,0.31,,408.1,85.8,153,
+EXP-0169,2026-09-05,P. Nair,trisodium citrate,citrate,water,40.0,5.3,15.0,1.0,39.8,0.32,-22.6,421.2,61.6,154,date_converted_to_iso
+EXP-0153,2026-08-15,K. Iyer,glucose,CTAB,water,25.0,5.8,15.0,0.25,33.1,0.24,32.3,414.9,56.2,155,date_converted_to_iso; temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0147,2026-08-06,S. Menon,ascorbic acid,citrate,water-ethanol 1:1,60.0,9.6,10.0,0.5,33.8,,-24.9,411.0,66.7,156,temp_unit_stripped; solvent_standardized
+EXP-0199,2026-10-18,A. Rao,glucose,,water-ethanol 1:1,95.0,9.5,120.0,0.25,24.9,,-35.2,408.8,99.0,157,solvent_standardized
+EXP-0011,2026-01-29,S. Menon,trisodium citrate,PEG,ethanol,45.0,6.1,180.0,0.25,,0.29,-21.2,,99.0,158,solvent_standardized
+EXP-0032,2026-02-26,K. Iyer,glucose,PEG,ethanol,60.0,10.0,15.0,0.5,27.4,0.2,-18.7,412.0,71.5,159,date_converted_to_iso; solvent_standardized
+EXP-0198,2026-10-16,A. Rao,sodium borohydride,PEG,water,30.0,5.9,10.0,0.25,21.5,0.29,-4.5,407.1,,160,solvent_standardized
+EXP-0142,2026-07-30,K. Iyer,trisodium citrate,citrate,ethanol,100.0,10.2,15.0,0.1,42.2,0.31,-28.6,418.0,72.2,162,date_converted_to_iso; temp_unit_stripped
+EXP-0003,2026-01-18,S. Menon,trisodium citrate,PVP,water,40.0,10.9,45.0,0.1,23.9,0.23,-30.6,411.0,65.6,163,solvent_standardized
+EXP-0096,2026-05-28,K. Iyer,sodium borohydride,citrate,water-ethanol 1:1,35.0,7.0,180.0,2.0,37.2,0.36,-34.0,409.4,,164,date_converted_to_iso; solvent_standardized
+EXP-0077,2026-04-29,S. Menon,ascorbic acid,PVP,water,45.0,8.8,180.0,0.1,29.6,0.23,-28.5,415.5,92.0,165,date_converted_to_iso; temp_unit_stripped
+EXP-0037,2026-03-06,A. Rao,glucose,PEG,water-ethanol 1:1,95.0,9.7,120.0,1.0,38.6,0.23,-14.8,414.0,93.7,166,date_converted_to_iso
+EXP-0163,2026-08-30,K. Iyer,ascorbic acid,CTAB,water,25.0,7.7,60.0,0.25,27.3,0.23,32.4,411.4,76.7,167,temp_unit_stripped; solvent_standardized
+EXP-0076,2026-04-28,K. Iyer,trisodium citrate,PVP,ethanol,80.0,9.6,180.0,1.0,42.7,0.22,-24.5,412.3,99.0,168,solvent_standardized
+EXP-0140,2026-07-28,P. Nair,glucose,CTAB,water-ethanol 1:1,45.0,8.9,15.0,0.1,25.5,0.24,,409.8,62.7,169,date_converted_to_iso; solvent_standardized
+EXP-0101,2026-06-04,P. Nair,glucose,PEG,water-ethanol 1:1,80.0,10.1,180.0,0.5,32.2,0.28,-7.3,413.9,99.0,170,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0035,2026-03-04,P. Nair,ascorbic acid,PVP,water,60.0,7.2,60.0,0.1,24.2,0.23,-27.5,407.4,74.0,171,solvent_standardized
+EXP-0057,2026-04-02,S. Menon,ascorbic acid,citrate,water,25.0,5.1,45.0,2.0,34.9,0.34,,415.4,58.3,172,solvent_standardized
+EXP-0200,2026-10-20,A. Rao,ascorbic acid,citrate,water-ethanol 1:1,80.0,10.5,90.0,2.0,43.7,0.28,-25.9,413.8,71.9,173,agno3_conc_uM_to_mM; solvent_standardized
+EXP-0041,2026-03-11,K. Iyer,trisodium citrate,PEG,ethanol,80.0,7.8,120.0,0.5,37.1,0.3,,416.0,83.8,174,
+EXP-0122,2026-07-03,P. Nair,sodium borohydride,PVP,ethanol,95.0,8.6,90.0,1.0,36.9,0.27,-26.5,417.7,80.7,175,solvent_standardized
+EXP-0008,2026-01-25,K. Iyer,glucose,PVP,water-ethanol 1:1,40.0,9.0,30.0,0.5,26.8,0.22,-16.8,406.0,65.3,176,solvent_standardized
+EXP-0170,2026-09-07,P. Nair,glucose,PVP,ethanol,40.0,8.4,15.0,0.1,34.5,,,412.2,72.9,177,temp_unit_stripped
+EXP-0102,2026-06-04,K. Iyer,ascorbic acid,PVP,ethanol,25.0,10.9,180.0,0.5,29.1,0.23,-32.0,411.4,96.8,178,temp_unit_K_to_C; particle_size_nm_stripped; solvent_standardized
+EXP-0098,2026-05-31,S. Menon,trisodium citrate,CTAB,water,60.0,7.1,180.0,0.5,34.0,0.22,31.9,413.3,95.2,179,temp_unit_stripped
+EXP-0113,2026-06-20,S. Menon,ascorbic acid,CTAB,water-ethanol 1:1,85.0,5.6,180.0,0.5,39.0,0.22,33.3,414.1,99.0,180,solvent_standardized
+EXP-0073,2026-04-25,S. Menon,glucose,citrate,water,35.0,9.9,30.0,1.0,38.3,0.25,-41.0,416.0,,181,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0023,2026-02-14,A. Rao,trisodium citrate,CTAB,water,40.0,5.1,45.0,1.0,,0.15,32.9,409.3,62.6,182,temp_unit_stripped; solvent_standardized; particle_size_nm_out_of_bounds(-12.4)
+EXP-0156,2026-08-18,S. Menon,ascorbic acid,PVP,water,80.0,6.0,120.0,1.0,34.3,0.26,-32.2,410.5,95.1,183,date_converted_to_iso; solvent_standardized
+EXP-0078,2026-05-03,A. Rao,ascorbic acid,PVP,water-ethanol 1:1,90.0,9.7,10.0,1.0,32.5,,-31.7,413.3,78.6,184,date_converted_to_iso; solvent_standardized
+EXP-0176,2026-09-16,P. Nair,ascorbic acid,citrate,ethanol,55.0,9.9,120.0,2.0,50.8,0.36,-33.0,423.7,77.8,185,
+EXP-0075,2026-04-28,K. Iyer,trisodium citrate,CTAB,ethanol,95.0,10.0,15.0,0.25,47.8,0.36,27.8,413.8,72.1,186,agno3_conc_uM_to_mM; solvent_standardized
+EXP-0028,2026-02-21,K. Iyer,glucose,citrate,ethanol,40.0,6.6,90.0,0.25,27.9,0.24,-25.1,407.9,75.9,187,date_converted_to_iso; temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0129,2026-07-12,P. Nair,sodium borohydride,CTAB,water,25.0,10.1,15.0,0.25,29.2,0.17,29.4,409.0,59.6,188,date_converted_to_iso; solvent_standardized
+EXP-0092,2026-05-21,A. Rao,glucose,CTAB,water,80.0,8.4,45.0,0.5,33.1,0.25,21.5,411.8,78.8,189,solvent_standardized
+EXP-0180,2026-09-21,K. Iyer,trisodium citrate,,water,75.0,6.8,10.0,0.25,36.1,0.29,-17.5,415.5,76.0,191,date_converted_to_iso; solvent_standardized
+EXP-0012,2026-01-30,A. Rao,glucose,none,water,80.0,6.0,10.0,1.0,75.0,0.37,-23.1,432.5,,192,solvent_standardized
+EXP-0150,2026-08-12,P. Nair,sodium borohydride,CTAB,water,55.0,9.7,45.0,1.0,,0.34,38.6,405.8,74.0,193,
+EXP-0191,2026-10-08,P. Nair,trisodium citrate,PVP,ethanol,60.0,7.0,60.0,0.1,28.4,0.17,-21.6,410.6,83.5,194,
+EXP-0194,2026-10-11,P. Nair,glucose,PVP,ethanol,95.0,6.1,120.0,0.25,27.0,0.25,-28.5,405.1,92.8,195,date_converted_to_iso; solvent_standardized
+EXP-0017,2026-02-04,P. Nair,glucose,PEG,water-ethanol 1:1,75.0,,15.0,0.25,22.4,0.19,-13.4,406.5,76.3,196,temp_unit_stripped; solvent_standardized
+EXP-0159,2026-08-23,S. Menon,glucose,CTAB,water,40.0,8.6,90.0,2.0,46.3,0.37,27.9,419.7,75.6,197,temp_unit_stripped; agno3_conc_uM_to_mM; particle_size_nm_stripped
+EXP-0185,2026-09-29,S. Menon,sodium borohydride,PEG,ethanol,90.0,9.2,120.0,0.1,22.8,0.19,-3.4,408.0,86.4,198,
+EXP-0165,2026-08-31,P. Nair,glucose,PVP,ethanol,35.0,10.3,30.0,0.1,30.3,0.27,-20.8,,65.7,199,temp_unit_stripped; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0002,2026-01-14,K. Iyer,trisodium citrate,none,ethanol,60.0,,90.0,0.1,49.5,0.33,-8.1,421.4,76.5,200,solvent_standardized
+EXP-0137,2026-07-23,A. Rao,glucose,none,water,95.0,8.8,120.0,1.0,92.4,0.42,-7.2,442.0,91.4,201,temp_unit_K_to_C; agno3_conc_uM_to_mM; solvent_standardized
+EXP-0031,2026-02-26,P. Nair,sodium borohydride,CTAB,water-ethanol 1:1,80.0,5.4,90.0,0.1,33.5,0.35,37.8,408.6,79.8,202,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0173,2026-09-13,A. Rao,ascorbic acid,PEG,ethanol,35.0,10.3,10.0,0.25,29.1,0.26,-15.2,416.4,50.9,203,date_converted_to_iso
+EXP-0100,2026-06-02,K. Iyer,trisodium citrate,PEG,water-ethanol 1:1,25.0,7.5,30.0,0.1,30.2,0.24,-23.7,414.6,65.8,204,temp_unit_stripped; solvent_standardized
+EXP-0005,2026-01-19,P. Nair,ascorbic acid,citrate,water,90.0,6.6,120.0,2.0,41.5,0.35,-28.1,417.9,96.2,205,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0081,2026-05-07,P. Nair,trisodium citrate,none,water-ethanol 1:1,80.0,10.5,60.0,0.1,77.7,0.46,-17.6,431.8,80.7,206,date_converted_to_iso; solvent_standardized
+EXP-0111,2026-06-18,S. Menon,trisodium citrate,none,water,60.0,7.0,15.0,1.0,51.0,0.32,-15.2,419.9,68.7,207,date_converted_to_iso; temp_unit_stripped; solvent_standardized
+EXP-0104,2026-06-06,A. Rao,trisodium citrate,PEG,water,100.0,8.2,90.0,0.1,33.1,0.24,,414.2,79.8,208,temp_unit_stripped; solvent_standardized

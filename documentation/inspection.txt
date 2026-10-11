@@ -1,0 +1,108 @@
+
+============================================================
+SHAPE / DTYPES
+============================================================
+(207, 15)
+experiment_id         object
+date                  object
+researcher            object
+reducing_agent        object
+stabilizer            object
+solvent               object
+temperature           object
+ph                   float64
+reaction_time_min      int64
+agno3_conc            object
+particle_size_nm      object
+pdi                  float64
+zeta_potential_mv    float64
+uvvis_peak_nm        float64
+yield_percent        float64
+dtype: object
+
+============================================================
+MISSING VALUES (default vs with '-')
+============================================================
+                   default  with_dash
+experiment_id            0          0
+date                     0          0
+researcher               0          0
+reducing_agent           0          0
+stabilizer               4          4
+solvent                  0          0
+temperature              0          0
+ph                       5          6
+reaction_time_min        0          0
+agno3_conc               0          0
+particle_size_nm         9         10
+pdi                      6          8
+zeta_potential_mv       11         14
+uvvis_peak_nm            6          7
+yield_percent            7         10
+total: 48 -> 59
+
+============================================================
+DUPLICATES
+============================================================
+exact duplicate rows: 4
+extra rows sharing an experiment_id: 7
+rows in conflicting-ID groups (same ID, different content): 6
+EXP-0059 -> differs in: ['particle_size_nm']
+EXP-0067 -> differs in: ['particle_size_nm']
+EXP-0105 -> differs in: ['particle_size_nm']
+
+============================================================
+CATEGORICAL VALUES
+============================================================
+solvent: ["'water'", "'ethanol '", "'water-ethanol 1:1'", "'ethanol'", "'EtOH'", "'Water/Ethanol 1:1'", "'Ethanol'", "'water '", "'H2O'", "'DI water'", "'water:ethanol (1:1)'", "'Water'"]
+stabilizer:
+ stabilizer
+PEG        48
+PVP        42
+citrate    41
+CTAB       39
+none       33
+NaN         4
+Name: count, dtype: int64
+reducing_agent: ['ascorbic acid', 'glucose', 'sodium borohydride', 'trisodium citrate']
+
+============================================================
+NON-NUMERIC TOKENS IN NUMERIC COLUMNS
+============================================================
+[temperature] ['95 C', '75 C', '40 C', '368.1 K', '55°C', '25 C', '373.1 K', '55 C', '293.1 K', '95°C', '353.1 K', '60 C', '338.1 K', '80 C', '40°C', '25°C', '65 C','-5 C', '60°C', '65°C', '30 C', '90 C', '100 C', '308.1 K', '45°C', '333.1 K', '80°C', '45 C', '298.1 K', '35°C', '75°C']
+[agno3_conc] ['250 uM', '100 uM', '1000 uM', '2000 uM', '500 uM']
+[particle_size_nm] ['39.7 nm', '40.5 nm', '51.9 nm', '33.9 nm', '43.1 nm', '31.8 nm', '47.5 nm', '23.5 nm', '39.1 nm', '29.1 nm', '46.3 nm']
+
+============================================================
+DATE FORMATS
+============================================================
+date
+D-D-D     124
+D/D/D      47
+A D, D     36
+Name: count, dtype: int64
+D/D/D dates: max of 1st part = 31 | max of 2nd part = 10
+
+============================================================
+RANGES AFTER UNIT NORMALIZATION (inspection only, not final cleaning)
+============================================================
+                      min        mean    max
+temp_C             -40.00   66.903382  999.0
+agno3_mM             0.10    0.715700    2.0
+size_nm            -12.40   36.506599   92.5
+ph                  -1.00    7.952239   17.2
+reaction_time_min    0.00   69.468599  180.0
+pdi                  0.13    0.306131    3.4
+zeta_mV            -41.00  -10.018653   43.6
+uvvis_nm           400.90  414.771500  442.0
+yield_pct           50.90   78.741117  134.0
+
+============================================================
+PROVISIONAL OUT-OF-RANGE CHECKS (adjust bounds when you write your rules)
+============================================================
+temp_C outside 0-100: 4 -> ['EXP-0007', 'EXP-0040', 'EXP-0118', 'EXP-0184']
+ph outside 0-14: 2 -> ['EXP-0010', 'EXP-0085']
+reaction_time <= 0: 1 -> ['EXP-0046']
+size <= 0: 1 -> ['EXP-0023']
+pdi outside 0-1: 2 -> ['EXP-0019']
+yield outside 0-100: 1 -> ['EXP-0014']

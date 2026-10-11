@@ -1,0 +1,14 @@
+a small test record in python memory was created with known edge cases 
+and were run through the  clean.py doc 
+============================================================
+RUNNING FAULT INJECTION & PIPELINE TESTS
+============================================================
+ [PASS] Invalid temperature (150 C) correctly identified as out-of-bounds.
+ [PASS] Missing token ('-') and negative particle size caught.
+ [PASS] Duplicate experiment_id with conflicting particle size detected.
+ [PASS] Immutability verified and provenance mappings trace back to original source rows.
+
+ALL PIPELINE TESTS PASSED SUCCESSFULLY.
+
+^^ above was the result obtained 
+

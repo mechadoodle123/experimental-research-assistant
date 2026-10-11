@@ -1,0 +1,44 @@
+found on the basis of inspection : 
+these are the cleaning rules involved : 
+
+CLEANING RULES — silver_nanoparticle_experiments.csv
+
+1. Missing tokens (blank, NA, N/A, null, -)
+   Rule: convert to NaN, keep the row.
+   Note: "none" in stabilizer is a real value, not missing.
+
+2. Temperature units
+   Rule: convert everything to °C (K minus 273.15, rounded to the nearest whole number).
+
+3. Temperature outside 0–100 °C
+   Rule: set to NaN, add a flag, keep the row.
+
+4. agno3_conc units
+   Rule: convert to mM (uM divided by 1000).
+   Assumption: plain numbers are already mM.
+
+5. particle_size_nm
+   Rule: strip the "nm" suffix, convert to a number.
+
+6. Impossible values
+   Rule: set to NaN, add a flag, keep the row.
+   Limits: pH 0–14, PDI 0–1, yield 0–100, reaction time > 0, particle size > 0.
+
+7. solvent names
+   Rule: strip whitespace, lowercase, map to one of three names:
+   water / ethanol / water-ethanol 1:1.
+
+8. date
+   Rule: convert to ISO (YYYY-MM-DD).
+   Slash dates are day-first (confirmed: first part goes up to 31).
+
+9. Exact duplicate rows
+   Rule: drop the extras and log them.
+
+10. Same experiment_id, different particle_size_nm
+    Rule: keep the first row, move the other to rejects.csv
+    with the reason "conflict, needs review".
+
+11. Provenance
+    Rule: add source_row (original CSV row number)
+    and cleaning_flags (what was changed or nulled).

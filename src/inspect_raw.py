@@ -1,63 +1,88 @@
-import pandas as pd 
+import pandas as pd
 
-df = pd.read_csv("../raw/silver_nanoparticle_experiments.csv")
+CSV_PATH = "../raw/silver_nanoparticle_experiments.csv"
 
-print("ROWS AND COLUMNS: ",df.shape)
-print("DATATYPES FOR EACH COLUMN: ",end= '\n\n')
+df_default = pd.read_csv(CSV_PATH)                    # pandas defaults only
+df = pd.read_csv(CSV_PATH, na_values=["-"])           # defaults + "-" as missing
+
+def section(title):
+    print("\n" + "=" * 60 + f"\n{title}\n" + "=" * 60)
+
+section("SHAPE / DTYPES")
+print(df.shape)
 print(df.dtypes)
-print(" \n\n")
-print("Count of null values per column ")
-print(df.isna().sum())
 
-print("total : ",df.isna().sum().sum())
+section("MISSING VALUES (default vs with '-')")
+missing = pd.DataFrame({"default": df_default.isna().sum(), "with_dash": df.isna().sum()})
+print(missing)
+print("total:", missing["default"].sum(), "->", missing["with_dash"].sum())
 
-print("duplicate rows : ", df.duplicated().sum())
+section("DUPLICATES")
+print("exact duplicate rows:", df.duplicated().sum())
+print("extra rows sharing an experiment_id:", df["experiment_id"].duplicated().sum())
+deduped = df.drop_duplicates()
+conflicts = deduped[deduped.duplicated("experiment_id", keep=False)].sort_values("experiment_id")
+print("rows in conflicting-ID groups (same ID, different content):", len(conflicts))
+for eid, g in conflicts.groupby("experiment_id"):
+    differing = [c for c in g.columns if g[c].astype(str).nunique() > 1]
+    print(eid, "-> differs in:", differing)
 
-print("Number of duplicate experiment_ids: ",df["experiment_id"].duplicated().sum())
+section("CATEGORICAL VALUES")
+print("solvent:", [repr(v) for v in df["solvent"].unique()])
+print("stabilizer:\n", df["stabilizer"].value_counts(dropna=False))
+print("reducing_agent:", list(df["reducing_agent"].unique()))
 
-unique_solvent = df["solvent"].unique()
-unique_stabi  = df["stabilizer"].unique()
-unique_reducing = df["reducing_agent"].unique()
-
-print("unique solvents: ",unique_solvent)
-print("unique stabilizers: ",unique_stabi)
-print("unique reducing agents: ",unique_reducing)
-
-numeric_cols = [
-    "temperature", "ph", "reaction_time_min", "agno3_conc",
-    "particle_size_nm", "pdi", "zeta_potential_mv",
-    "uvvis_peak_nm", "yield_percent"
-]
-
-print("\n" + "=" * 60)
-print("STRING / TOKEN ISSUES IN NUMERIC COLUMNS")
-print("=" * 60)
+section("NON-NUMERIC TOKENS IN NUMERIC COLUMNS")
+numeric_cols = ["temperature", "ph", "reaction_time_min", "agno3_conc",
+                "particle_size_nm", "pdi", "zeta_potential_mv", "uvvis_peak_nm", "yield_percent"]
 for col in numeric_cols:
-    if col in df.columns:
-        # Find non-null values that fail float conversion
-        coerced = pd.to_numeric(df[col], errors="coerce")
-        bad_mask = coerced.isna() & df[col].notna()
-        bad_values = df.loc[bad_mask, col].unique()
-        if len(bad_values) > 0:
-            print(f"[{col}] contains non-numeric tokens: {bad_values}")
+    coerced = pd.to_numeric(df[col], errors="coerce")
+    bad = df.loc[coerced.isna() & df[col].notna(), col].unique()
+    if len(bad):
+        print(f"[{col}] {list(bad)}")
 
-print("\n" + "=" * 60)
-print("MIN / MAX SUMMARY (WITH COERCION)")
-print("=" * 60)
-# Convert safely using errors='coerce' so bad tokens become NaN rather than raising an error
-df_numeric = df[numeric_cols].apply(pd.to_numeric, errors="coerce")
-summary = df_numeric.agg(["min", "mean", "max"]).T
-print(summary)
+section("DATE FORMATS")
+dates = df["date"].dropna().astype(str).str.strip()
+patterns = (dates.str.replace(r"[a-zA-Z]+", "A", regex=True)
+                 .str.replace(r"\d+", "D", regex=True))
+print(patterns.value_counts())
+slash = dates[dates.str.contains("/")].str.split("/")
+first = pd.to_numeric(slash.str[0]); second = pd.to_numeric(slash.str[1])
+print("D/D/D dates: max of 1st part =", first.max(), "| max of 2nd part =", second.max())
 
+section("RANGES AFTER UNIT NORMALIZATION (inspection only, not final cleaning)")
+def split_value(series):
+    parts = (series.astype("string").str.strip()
+             .str.extract(r"^(-?\d+(?:\.\d+)?)\s*(°C|C|K|uM|nm)?$"))
+    return pd.to_numeric(parts[0]), parts[1]
 
-dates = df['date'].dropna().astype(str).str.strip()
+t, t_unit = split_value(df["temperature"])
+is_kelvin = t_unit.eq("K").fillna(False).astype(bool)
+temp_c = t.mask(is_kelvin, t - 273.15).round(0)
+c, c_unit = split_value(df["agno3_conc"])
+is_um = c_unit.eq("uM").fillna(False).astype(bool)
+conc_mM = c.mask(is_um, c / 1000)
+size, _ = split_value(df["particle_size_nm"])
 
-# Replace runs of digits with 'D' and words with 'A'
-# Examples: '2026-02-18' -> 'D-D-D', 'Jun 25, 2026' -> 'A D, D', '25/09/2026' -> 'D/D/D'
-date_patterns = dates.str.replace(r'\d+', 'D', regex=True).str.replace(r'[a-zA-Z]+', 'A', regex=True)
+norm = pd.DataFrame({
+    "temp_C": temp_c, "agno3_mM": conc_mM, "size_nm": size,
+    "ph": pd.to_numeric(df["ph"], errors="coerce"),
+    "reaction_time_min": df["reaction_time_min"],
+    "pdi": pd.to_numeric(df["pdi"], errors="coerce"),
+    "zeta_mV": pd.to_numeric(df["zeta_potential_mv"], errors="coerce"),
+    "uvvis_nm": pd.to_numeric(df["uvvis_peak_nm"], errors="coerce"),
+    "yield_pct": pd.to_numeric(df["yield_percent"], errors="coerce"),
+})
+print(norm.agg(["min", "mean", "max"]).T)
 
-# Count distinct patterns
-pattern_counts = date_patterns.value_counts()
-print(f"Number of distinct date formats: {len(pattern_counts)}\n")
-print("Format breakdown:")
-print(pattern_counts)
+section("PROVISIONAL OUT-OF-RANGE CHECKS (adjust bounds when you write your rules)")
+checks = {
+    "temp_C outside 0-100": (norm.temp_C < 0) | (norm.temp_C > 100),
+    "ph outside 0-14": (norm.ph < 0) | (norm.ph > 14),
+    "reaction_time <= 0": norm.reaction_time_min <= 0,
+    "size <= 0": norm.size_nm <= 0,
+    "pdi outside 0-1": (norm.pdi < 0) | (norm.pdi > 1),
+    "yield outside 0-100": (norm.yield_pct < 0) | (norm.yield_pct > 100),
+}
+for name, mask in checks.items():
+    print(f"{name}: {mask.sum()} ->", sorted(set(df.loc[mask, 'experiment_id'])))
