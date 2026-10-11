@@ -1,0 +1,126 @@
+GOAL : to create a experimental research assistant 
+
+a small portfolio project 
+
+
+if a researcher has hundreds of experiments, records and notes 
+and they have certain queries 
+"Which experiments produced the largest particles?"
+"Find experiments where aggregation occurred after heating."
+"What differences were observed between experiments using different solvents?"
+
+
+How many rows and columns are there,
+(207, 15)
+ and what dtype did each column get?
+ DATATYPES FOR EACH COLUMN: 
+
+experiment_id        object
+date                 object
+researcher           object
+reducing_agent       object
+stabilizer           object
+solvent              object
+temperature          object
+ph                   object
+reaction_time_min     int64
+agno3_conc           object
+particle_size_nm     object
+pdi                  object
+zeta_potential_mv    object
+uvvis_peak_nm        object
+yield_percent        object
+
+  **Which dtypes look wrong, and why?
+  temperature          object
+ph                   object
+
+agno3_conc           object
+particle_size_nm     object
+pdi                  object
+zeta_potential_mv    object
+uvvis_peak_nm        object
+yield_percent        object
+
+
+reason: all have float values
+
+
+How many missing values are in each column? Check how Pandas treated tokens like NA, - and null.
+Count of null values per column 
+experiment_id         0
+date                  0
+researcher            0
+reducing_agent        0
+stabilizer            4
+solvent               0
+temperature           0
+ph                    5
+reaction_time_min     0
+agno3_conc            0
+particle_size_nm      9
+pdi                   6
+zeta_potential_mv    11
+uvvis_peak_nm         6
+yield_percent         7
+
+total               48 
+
+
+
+How many rows are fully duplicated? 
+4
+
+How many experiment_id values appear more than once?
+7
+What are the unique values of solvent, stabilizer and reducing_agent?
+unique solvents:  ['water' 'ethanol ' 'water-ethanol 1:1' 'ethanol' 'EtOH' 'Water/Ethanol 1:1' 'Ethanol' 'water ' 'H2O' 'DI water' 'water:ethanol (1:1)' 'Water']
+unique stabilizers:  ['none' 'PEG' 'PVP' 'citrate' 'CTAB' nan]
+unique reducing agents:  ['ascorbic acid' 'glucose' 'sodium borohydride' 'trisodium citrate']
+
+
+What are the min and max of every numeric column?
+============================================================
+MIN / MAX SUMMARY (WITH COERCION)
+============================================================
+                      min        mean    max
+temperature        -40.00   71.222222  999.0
+ph                  -1.00    7.952239   17.2
+reaction_time_min    0.00   69.468599  180.0
+agno3_conc           0.10    0.697727    2.0
+particle_size_nm   -12.40   36.373118   92.5
+pdi                  0.13    0.306131    3.4
+zeta_potential_mv  -41.00  -10.018653   43.6
+uvvis_peak_nm      400.90  414.771500  442.0
+yield_percent       50.90   78.741117  134.0
+
+
+Which values are physically impossible?
+Which temperature, agno3_conc and particle_size_nm entries contain text such as C, K, uM or nm?
+============================================================
+STRING / TOKEN ISSUES IN NUMERIC COLUMNS
+============================================================
+[temperature] contains non-numeric tokens: ['95 C' '75 C' '40 C' '368.1 K' '55°C' '25 C' '373.1 K' '55 C' '293.1 K'
+ '95°C' '353.1 K' '60 C' '338.1 K' '80 C' '40°C' '25°C' '65 C' '-5 C'
+ '60°C' '65°C' '30 C' '90 C' '100 C' '308.1 K' '45°C' '333.1 K' '80°C'
+ '45 C' '298.1 K' '35°C' '75°C']
+[ph] contains non-numeric tokens: ['-']
+[agno3_conc] contains non-numeric tokens: ['250 uM' '100 uM' '1000 uM' '2000 uM' '500 uM']
+[particle_size_nm] contains non-numeric tokens: ['39.7 nm' '40.5 nm' '-' '51.9 nm' '33.9 nm' '43.1 nm' '31.8 nm' '47.5 nm'
+ '23.5 nm' '39.1 nm' '29.1 nm' '46.3 nm']
+[pdi] contains non-numeric tokens: ['-']
+[zeta_potential_mv] contains non-numeric tokens: ['-']
+[uvvis_peak_nm] contains non-numeric tokens: ['-']
+[yield_percent] contains non-numeric tokens: ['-']
+
+
+How many different date formats appear?
+
+Number of distinct date formats: 3
+
+Format breakdown:
+date
+A-A-A     124
+A/A/A      47
+A A, A     36
+Name: count, dtype: int64
