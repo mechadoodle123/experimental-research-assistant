@@ -1,0 +1,43 @@
+=================================================================
+EXPERIMENTAL RESEARCH ASSISTANT: SQL QUERY ENGINE
+=================================================================
+
+[1] Overall Database Metrics:
+ total_experiments  avg_size_nm  min_size_nm  max_size_nm  avg_yield_pct  avg_pdi
+               200         36.7         15.8         92.5          78.56    0.275
+
+[2] Top 5 Smallest Nanoparticle Experiments:
+experiment_id     reducing_agent stabilizer           solvent  temperature  ph  particle_size_nm  pdi  yield_percent
+     EXP-0148 sodium borohydride        PEG water-ethanol 1:1         25.0 9.4              15.8 0.18           63.4
+     EXP-0182      ascorbic acid        PEG             water         25.0 8.8              17.5 0.15           72.4
+     EXP-0030 sodium borohydride        PEG             water         55.0 9.1              18.1 0.18           81.4
+     EXP-0103 sodium borohydride        PVP           ethanol         60.0 7.4              18.6 0.17           84.4
+     EXP-0115 sodium borohydride        PEG             water         25.0 9.6              18.8 0.19            NaN
+
+[3] Performance by Reducing Agent:
+    reducing_agent  run_count  avg_size_nm  avg_pdi  avg_yield_pct  avg_temp_c
+sodium borohydride         37        29.33    0.248          74.99        51.9
+     ascorbic acid         58        35.50    0.283          78.39        62.8
+           glucose         59        39.29    0.279          80.61        65.8
+ trisodium citrate         46        40.81    0.282          78.85        61.4
+
+[4] Stabilizer Impact on Zeta Potential & Particle Size:
+ stabilizer  run_count  avg_zeta_mv  avg_pdi  avg_size_nm
+    citrate         38       -29.05    0.279        37.11
+        PVP         41       -28.15    0.238        30.85
+        PEG         46       -12.33    0.259        30.56
+       none         32       -11.66    0.352        54.74
+Unspecified          4        -0.33    0.297        36.85
+       CTAB         39        30.15    0.262        35.11
+
+[5] Custom Filter: Water solvent, size <= 25 nm, yield >= 70%:
+experiment_id     reducing_agent stabilizer solvent  temperature  particle_size_nm  yield_percent
+     EXP-0182      ascorbic acid        PEG   water         25.0              17.5           72.4
+     EXP-0030 sodium borohydride        PEG   water         55.0              18.1           81.4
+     EXP-0043 sodium borohydride        PEG   water         40.0              19.5           82.5
+     EXP-0087            glucose        PEG   water         20.0              20.3           73.6
+     EXP-0166 sodium borohydride       CTAB   water         80.0              23.5           90.8
+     EXP-0054            glucose        PVP   water         25.0              23.9           97.4
+     EXP-0035      ascorbic acid        PVP   water         60.0              24.2           74.0
+     EXP-0155 sodium borohydride    citrate   water         25.0              24.5           75.0
+     EXP-0060 sodium borohydride        PVP   water         80.0              25.0           85.2
